@@ -1,6 +1,6 @@
 """Train a DQN agent on CartPole and save the weights and a reward plot.
 
-    python train.py                    # defaults: CartPole-v1, 50,000 steps
+    python train.py                    # defaults: CartPole-v1, 20,000 steps
     python train.py --steps 100000
 """
 import argparse

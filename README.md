@@ -63,7 +63,7 @@ cd rl-cartpole-dqn
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/patch_keras_rl.py                      # once, after installing
-python train.py --steps 20000                         # ~5–10 min on CPU
+python train.py --steps 20000                         # ~1–3 min on CPU
 python evaluate.py --episodes 20                      # prints mean reward, saves results/agent.mp4
 ```
 
@@ -74,7 +74,7 @@ After training, add your numbers and plot here:
 | Agent | Mean reward (20 test episodes) |
 |---|---|
 | Random actions | ~20 |
-| DQN (50,000 steps) | _fill in_ |
+| DQN (20,000 steps) | _fill in_ |
 
 ![Training rewards](results/training_rewards.png)
 
