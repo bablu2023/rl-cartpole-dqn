@@ -63,7 +63,7 @@ cd rl-cartpole-dqn
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/patch_keras_rl.py                      # once, after installing
-python train.py --steps 50000                         # ~5–10 min on CPU
+python train.py --steps 20000                         # ~5–10 min on CPU
 python evaluate.py --episodes 20                      # prints mean reward, saves results/agent.mp4
 ```
 

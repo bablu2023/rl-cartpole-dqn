@@ -30,7 +30,7 @@ def moving_average(values, window=20):
 def main():
     p = argparse.ArgumentParser()
     p.add_argument("--env", default="CartPole-v1")
-    p.add_argument("--steps", type=int, default=50000)
+    p.add_argument("--steps", type=int, default=20000)
     p.add_argument("--out", default="results")
     args = p.parse_args()
     os.makedirs(args.out, exist_ok=True)
