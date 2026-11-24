@@ -28,6 +28,7 @@ def create_agent(states, actions, hidden=(24, 24), learning_rate=1e-3):
         memory=SequentialMemory(limit=50000, window_length=1),
         nb_steps_warmup=10,        # steps to collect before learning starts
         target_model_update=1e-2,  # slow (soft) update of the target network
+        train_interval=4,  
     )
     dqn.compile(Adam(learning_rate=learning_rate), metrics=["mae"])
     return dqn, model
